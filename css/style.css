@@ -162,7 +162,7 @@ header {
 
 /* HERO IMAGE */
 .hero-image img {
-  width: 580px;
+  width: 480px;
   border-radius: 16px;
   transition: transform 0.4s ease;
 }
