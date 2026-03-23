@@ -1,628 +1,543 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technology — AVION AX Series</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology — AVION AX Series</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/teknologi.css" />
-  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/teknologi.css" />
+</head>
 
-  <body>
-    <!-- GLOBAL BACKGROUND VIDEO -->
-    <video autoplay muted loop class="bg-video">
-      <source src="assets/video/tech background-dark.mp4" type="video/mp4" />
-    </video>
+<body>
 
-    <!-- OVERLAY -->
-    <div class="bg-overlay"></div>
+  <!-- GLOBAL BACKGROUND VIDEO -->
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/video/tech background-dark.mp4" type="video/mp4">
+  </video>
 
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html">
-            <img src="assets/image/NEW-AVION.png" alt="AVION Logo" />
-          </a>
-        </div>
+  <!-- OVERLAY -->
+  <div class="bg-overlay"></div>
 
-        <ul class="nav-menu">
-          <li><a href="product.html">Produk</a></li>
-          <li><a href="solution.html">Solusi</a></li>
-          <li><a href="teknologi.html" class="nav-active">Teknologi</a></li>
-          <li><a href="#">Kontak</a></li>
-        </ul>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/image/NEW-AVION.png" alt="AVION Logo" />
+        </a>
+      </div>
 
-        <a
-          href="https://api.whatsapp.com/send/?phone=6281563905555&text=Halo,+saya+mau+bertanya+tentang+AVION+Display!"
-          target="_blank"
-          class="nav-cta"
-          >Konsultasi</a
-        >
-      </nav>
-    </header>
+      <ul class="nav-menu">
+        <li><a href="product.html">Produk</a></li>
+        <li><a href="solution.html">Solusi</a></li>
+        <li><a href="teknologi.html" class="nav-active">Teknologi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
 
-    <main>
-      <!-- PAGE HERO -->
-      <section class="page-hero">
-        <div class="page-hero-text reveal d1">
-          <div class="badge">Full Specifications · AX Series</div>
+      <a href="https://api.whatsapp.com/send/?phone=6281563905555&text=Halo,+saya+mau+bertanya+tentang+AVION+Display!"
+         target="_blank"
+         class="nav-cta">Konsultasi</a>
 
-          <h1>Built for the <span>Next Generation</span> of Collaboration</h1>
+      <!-- HAMBURGER -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-          <p>
-            Every detail of the AVION AX Series is engineered for clarity,
-            speed, and seamless interaction — from the 4K panel to the
-            AI-powered audio system.
-          </p>
+  <!-- MOBILE NAV DRAWER -->
+  <div class="nav-drawer" id="navDrawer">
+    <ul>
+      <li><a href="product.html">Produk</a></li>
+      <li><a href="solution.html">Solusi</a></li>
+      <li><a href="teknologi.html" class="nav-active">Teknologi</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <a href="https://api.whatsapp.com/send/?phone=6281563905555&text=Halo,+saya+mau+bertanya+tentang+AVION+Display!"
+       target="_blank" class="nav-drawer-cta">Konsultasi</a>
+  </div>
 
-          <div class="size-selector">
-            <div class="size-chip active">
-              <span class="chip-name">AX 65</span>
-              <span class="chip-sub">Huddle &amp; small rooms</span>
-            </div>
-            <div class="size-chip">
-              <span class="chip-name">AX 75</span>
-              <span class="chip-sub">Medium meeting rooms</span>
-            </div>
-            <div class="size-chip">
-              <span class="chip-name">AX 86</span>
-              <span class="chip-sub">Large conference rooms</span>
-            </div>
-            <div class="size-chip">
-              <span class="chip-name">AX 98</span>
-              <span class="chip-sub">Auditoriums &amp; halls</span>
-            </div>
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+
+      <div class="page-hero-text reveal d1">
+        <div class="badge">Full Specifications · AX Series</div>
+
+        <h1>Built for the <span>Next Generation</span> of Collaboration</h1>
+
+        <p>
+          Every detail of the AVION AX Series is engineered for clarity, speed,
+          and seamless interaction — from the 4K panel to the AI-powered audio system.
+        </p>
+
+        <div class="size-selector">
+          <div class="size-chip active">
+            <span class="chip-name">AX 65</span>
+            <span class="chip-sub">Huddle &amp; small rooms</span>
           </div>
-        </div>
-
-        <div class="page-hero-visual reveal d2">
-          <div class="hero-glow"></div>
-          <img src="assets/image/AVION AX SERIES.png" alt="AVION AX Series" />
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- TECHNICAL SPECS -->
-      <section class="specs-section">
-        <div class="section-header reveal d1">
-          <h2>Technical Specifications</h2>
-          <p>Full hardware breakdown for the AVION AX Series platform.</p>
-        </div>
-
-        <div class="specs-grid">
-          <!-- Display -->
-          <div class="spec-card reveal d2">
-            <div class="spec-card-title">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8M12 17v4" />
-              </svg>
-              Display
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Resolution</span>
-              <span class="spec-value hi">4K UHD (3840×2160)</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Panel</span>
-              <span class="spec-value">Tempered Glass</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Surface</span>
-              <span class="spec-value">Anti-glare, Anti-fingerprint</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Viewing Angle</span>
-              <span class="spec-value">178° (H/V)</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Color Depth</span>
-              <span class="spec-value">10-bit</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Touch Points</span>
-              <span class="spec-value hi">40-point Multi-touch</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Touch Accuracy</span>
-              <span class="spec-value">±1mm</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Response Time</span>
-              <span class="spec-value">≤6ms</span>
-            </div>
+          <div class="size-chip">
+            <span class="chip-name">AX 75</span>
+            <span class="chip-sub">Medium meeting rooms</span>
           </div>
-
-          <!-- Compute System -->
-          <div class="spec-card reveal d3">
-            <div class="spec-card-title">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <path d="M9 9h6v6H9z" />
-                <path
-                  d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"
-                />
-              </svg>
-              Compute System
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Android Version</span>
-              <span class="spec-value hi">Android 14</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Android RAM</span>
-              <span class="spec-value">8 GB</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Android Storage</span>
-              <span class="spec-value">128 GB</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">OPS Processor</span>
-              <span class="spec-value hi">Intel i7</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">OPS RAM</span>
-              <span class="spec-value">8 GB</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">OPS Storage</span>
-              <span class="spec-value hi">512 GB SSD</span>
-            </div>
+          <div class="size-chip">
+            <span class="chip-name">AX 86</span>
+            <span class="chip-sub">Large conference rooms</span>
           </div>
-
-          <!-- Audio & Camera -->
-          <div class="spec-card reveal d4">
-            <div class="spec-card-title">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"
-                />
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8" />
-              </svg>
-              Audio &amp; Camera
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Microphone</span>
-              <span class="spec-value hi">8-array Beamforming</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Audio Pickup</span>
-              <span class="spec-value">360° Omnidirectional</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Front Camera</span>
-              <span class="spec-value hi">48MP (Optional)</span>
-            </div>
-          </div>
-
-          <!-- Connectivity -->
-          <div class="spec-card reveal d5">
-            <div class="spec-card-title">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"
-                />
-                <circle cx="12" cy="20" r="1" fill="currentColor" />
-              </svg>
-              Connectivity
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Wireless</span>
-              <span class="spec-value hi">Wi-Fi + Bluetooth</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Casting</span>
-              <span class="spec-value">4K, Bi-directional</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Screen Split</span>
-              <span class="spec-value">Quad View</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Ports</span>
-              <span class="spec-value hi">HDMI, USB, Type-C, OPS</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Power Input</span>
-              <span class="spec-value">100–240V</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">Standby Power</span>
-              <span class="spec-value">≤0.5W</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- FEATURE HIGHLIGHTS -->
-      <section class="features-section">
-        <div class="section-header reveal d1">
-          <h2>Feature Highlights</h2>
-          <p>The technology behind every interaction, explained.</p>
-        </div>
-
-        <div class="features-bento">
-          <!-- 4K Display — wide card -->
-          <div class="f-card wide reveal d2">
-            <div class="f-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8M12 17v4" />
-              </svg>
-            </div>
-            <div class="f-card-split">
-              <div class="f-card-col">
-                <div class="f-stat">4K</div>
-                <div class="f-stat-label">UHD · 3840 × 2160</div>
-                <h3>Crystal-Clear Display</h3>
-                <p>
-                  Tempered anti-glare glass with a 178° viewing angle ensures
-                  every seat gets a perfect, vivid picture — with 10-bit color
-                  depth for cinematic accuracy.
-                </p>
-              </div>
-              <div class="f-card-col">
-                <div class="f-stat">40pt</div>
-                <div class="f-stat-label">Infrared Multi-touch</div>
-                <h3>Precision Touch Engine</h3>
-                <p>
-                  Up to 40 simultaneous touch points with ±1mm accuracy and ≤6ms
-                  response — annotations and gestures feel instant and natural,
-                  just like pen on paper.
-                </p>
-              </div>
-            </div>
-            <div class="f-tags">
-              <span class="f-tag">10-bit Color</span>
-              <span class="f-tag">Anti-glare</span>
-              <span class="f-tag">Anti-fingerprint</span>
-              <span class="f-tag">178° H/V</span>
-              <span class="f-tag">≤6ms Response</span>
-            </div>
-          </div>
-
-          <!-- Dual OS -->
-          <div class="f-card reveal d3">
-            <div class="f-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <path d="M9 9h6v6H9z" />
-              </svg>
-            </div>
-            <h3>Dual OS Architecture</h3>
-            <p>
-              Switch seamlessly between Android 14 and Windows via OPS Intel i7
-              — the right OS for every workflow, without rebooting.
-            </p>
-            <div class="f-tags">
-              <span class="f-tag">Android 14</span>
-              <span class="f-tag">Intel i7 OPS</span>
-              <span class="f-tag">8GB + 512GB SSD</span>
-            </div>
-          </div>
-
-          <!-- AI Audio -->
-          <div class="f-card reveal d4">
-            <div class="f-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"
-                />
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-              </svg>
-            </div>
-            <h3>360° AI Audio</h3>
-            <p>
-              An 8-array beamforming microphone captures every voice with
-              omnidirectional precision — ideal for hybrid meetings and open
-              training rooms.
-            </p>
-            <div class="f-tags">
-              <span class="f-tag">8-Array Mic</span>
-              <span class="f-tag">360° Pickup</span>
-              <span class="f-tag">Noise Reduction</span>
-            </div>
-          </div>
-
-          <!-- Wireless Casting -->
-          <div class="f-card reveal d5">
-            <div class="f-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"
-                />
-                <circle cx="12" cy="20" r="1" fill="currentColor" />
-              </svg>
-            </div>
-            <h3>4K Wireless Casting</h3>
-            <p>
-              Bi-directional 4K casting and Quad View let multiple participants
-              share content simultaneously — zero cables required.
-            </p>
-            <div class="f-tags">
-              <span class="f-tag">4K Cast</span>
-              <span class="f-tag">Bi-directional</span>
-              <span class="f-tag">Quad View</span>
-            </div>
-          </div>
-
-          <!-- Camera — wide card -->
-          <div class="f-card wide reveal d6">
-            <div class="f-card-split">
-              <div class="f-card-col">
-                <div class="f-icon">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <path d="M23 7l-7 5 7 5V7z" />
-                    <rect x="1" y="5" width="15" height="14" rx="2" />
-                  </svg>
-                </div>
-                <div class="f-stat">48MP</div>
-                <div class="f-stat-label">Front Camera (Optional)</div>
-                <h3>Professional Video Quality</h3>
-                <p>
-                  Capture every participant with studio-grade clarity — your
-                  video calls look as sharp as in-person meetings.
-                </p>
-              </div>
-              <div class="f-card-col">
-                <div class="f-icon">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path
-                      d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"
-                    />
-                  </svg>
-                </div>
-                <div class="f-stat">Quad</div>
-                <div class="f-stat-label">Screen Split View</div>
-                <h3>Multi-source Collaboration</h3>
-                <p>
-                  Display up to four content sources side by side — perfect for
-                  hybrid sessions, data comparison, or whiteboarding.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- SMART ACCESSORIES -->
-      <section class="accessories-section">
-        <div class="section-header reveal d1">
-          <h2>Smart Accessories</h2>
-          <p>Enhance your AVION experience with purpose-built accessories.</p>
-        </div>
-
-        <div class="acc-grid">
-          <div class="acc-card reveal d2">
-            <div class="acc-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
-                />
-              </svg>
-            </div>
-            <h3>Smart Pen</h3>
-            <p>
-              Dual-color pen with flip-and-write technology for seamless
-              annotation.
-            </p>
-            <ul>
-              <li>Dual-color support</li>
-              <li>Flip-and-write function</li>
-              <li>Ergonomic design</li>
-              <li>Pressure sensitivity</li>
-            </ul>
-          </div>
-
-          <div class="acc-card reveal d3">
-            <div class="acc-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8M12 17v4M17 8l-5 5-5-5" />
-              </svg>
-            </div>
-            <h3>Casting Dongle</h3>
-            <p>
-              Wireless casting dongle via USB / Type-C for instant screen
-              sharing.
-            </p>
-            <ul>
-              <li>4K wireless casting</li>
-              <li>USB and Type-C options</li>
-              <li>Plug-and-play</li>
-              <li>Multi-device support</li>
-            </ul>
-          </div>
-
-          <div class="acc-card reveal d4">
-            <div class="acc-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"
-                />
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8" />
-              </svg>
-            </div>
-            <h3>Omni Mic Series</h3>
-            <p>
-              360° omnidirectional microphone for clear audio pickup in any
-              setting.
-            </p>
-            <ul>
-              <li>8-array beamforming</li>
-              <li>360° coverage</li>
-              <li>Noise cancellation</li>
-              <li>Echo reduction</li>
-            </ul>
-          </div>
-
-          <div class="acc-card reveal d5">
-            <div class="acc-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8M12 17v4" />
-              </svg>
-            </div>
-            <h3>Mobile Stands</h3>
-            <p>
-              Professional mobile stands for office and classroom environments.
-            </p>
-            <ul>
-              <li>Height adjustable</li>
-              <li>Stable base with wheels</li>
-              <li>Easy mobility</li>
-              <li>Cable management</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <div class="cta-banner reveal d1">
-        <div class="cta-inner">
-          <h2>Ready to Experience the AX Series?</h2>
-          <p>
-            Talk to our team and find the right size and configuration for your
-            space.
-          </p>
-          <div class="cta-btns">
-            <a
-              href="https://api.whatsapp.com/send/?phone=6281563905555&text=Halo,+saya+mau+bertanya+tentang+AVION+Display!"
-              target="_blank"
-              class="primary-btn"
-              >Konsultasi Sekarang</a
-            >
-
-            <a
-              href="https://www.tokopedia.com/central-audio-visual/etalase/interactive-display"
-              target="_blank"
-              class="secondary-btn tokped"
-            >
-              <img src="assets/image/tokopedia-icon.png" class="btn-icon" />
-              Order via Tokopedia
-            </a>
+          <div class="size-chip">
+            <span class="chip-name">AX 98</span>
+            <span class="chip-sub">Auditoriums &amp; halls</span>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <p>© 2026 AVION Display</p>
-    </footer>
+      <div class="page-hero-visual reveal d2">
+        <div class="hero-glow"></div>
+        <img src="assets/image/AVION AX SERIES.png" alt="AVION AX Series" />
+      </div>
 
-    <script>
-      // Size chip toggle
-      document.querySelectorAll(".size-chip").forEach((chip) => {
-        chip.addEventListener("click", () => {
-          document
-            .querySelectorAll(".size-chip")
-            .forEach((c) => c.classList.remove("active"));
-          chip.classList.add("active");
-        });
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- TECHNICAL SPECS -->
+    <section class="specs-section">
+
+      <div class="section-header reveal d1">
+        <h2>Technical Specifications</h2>
+        <p>Full hardware breakdown for the AVION AX Series platform.</p>
+      </div>
+
+      <div class="specs-grid">
+
+        <!-- Display -->
+        <div class="spec-card reveal d2">
+          <div class="spec-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+            </svg>
+            Display
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Resolution</span>
+            <span class="spec-value hi">4K UHD (3840×2160)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Panel</span>
+            <span class="spec-value">Tempered Glass</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Surface</span>
+            <span class="spec-value">Anti-glare, Anti-fingerprint</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Viewing Angle</span>
+            <span class="spec-value">178° (H/V)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Color Depth</span>
+            <span class="spec-value">10-bit</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Touch Points</span>
+            <span class="spec-value hi">40-point Multi-touch</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Touch Accuracy</span>
+            <span class="spec-value">±1mm</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Response Time</span>
+            <span class="spec-value">≤6ms</span>
+          </div>
+        </div>
+
+        <!-- Compute System -->
+        <div class="spec-card reveal d3">
+          <div class="spec-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M9 9h6v6H9z"/>
+              <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
+            </svg>
+            Compute System
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Android Version</span>
+            <span class="spec-value hi">Android 14</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Android RAM</span>
+            <span class="spec-value">8 GB</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Android Storage</span>
+            <span class="spec-value">128 GB</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">OPS Processor</span>
+            <span class="spec-value hi">Intel i7</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">OPS RAM</span>
+            <span class="spec-value">8 GB</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">OPS Storage</span>
+            <span class="spec-value hi">512 GB SSD</span>
+          </div>
+        </div>
+
+        <!-- Audio & Camera -->
+        <div class="spec-card reveal d4">
+          <div class="spec-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8"/>
+            </svg>
+            Audio &amp; Camera
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Microphone</span>
+            <span class="spec-value hi">8-array Beamforming</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Audio Pickup</span>
+            <span class="spec-value">360° Omnidirectional</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Front Camera</span>
+            <span class="spec-value hi">48MP (Optional)</span>
+          </div>
+        </div>
+
+        <!-- Connectivity -->
+        <div class="spec-card reveal d5">
+          <div class="spec-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"/>
+              <circle cx="12" cy="20" r="1" fill="currentColor"/>
+            </svg>
+            Connectivity
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Wireless</span>
+            <span class="spec-value hi">Wi-Fi + Bluetooth</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Casting</span>
+            <span class="spec-value">4K, Bi-directional</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Screen Split</span>
+            <span class="spec-value">Quad View</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Ports</span>
+            <span class="spec-value hi">HDMI, USB, Type-C, OPS</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Power Input</span>
+            <span class="spec-value">100–240V</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Standby Power</span>
+            <span class="spec-value">≤0.5W</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- FEATURE HIGHLIGHTS -->
+    <section class="features-section">
+
+      <div class="section-header reveal d1">
+        <h2>Feature Highlights</h2>
+        <p>The technology behind every interaction, explained.</p>
+      </div>
+
+      <div class="features-bento">
+
+        <!-- 4K Display — wide card -->
+        <div class="f-card wide reveal d2">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <div class="f-card-split">
+            <div class="f-card-col">
+              <div class="f-stat">4K</div>
+              <div class="f-stat-label">UHD · 3840 × 2160</div>
+              <h3>Crystal-Clear Display</h3>
+              <p>Tempered anti-glare glass with a 178° viewing angle ensures every seat gets a perfect, vivid picture — with 10-bit color depth for cinematic accuracy.</p>
+            </div>
+            <div class="f-card-col">
+              <div class="f-stat">40pt</div>
+              <div class="f-stat-label">Infrared Multi-touch</div>
+              <h3>Precision Touch Engine</h3>
+              <p>Up to 40 simultaneous touch points with ±1mm accuracy and ≤6ms response — annotations and gestures feel instant and natural, just like pen on paper.</p>
+            </div>
+          </div>
+          <div class="f-tags">
+            <span class="f-tag">10-bit Color</span>
+            <span class="f-tag">Anti-glare</span>
+            <span class="f-tag">Anti-fingerprint</span>
+            <span class="f-tag">178° H/V</span>
+            <span class="f-tag">≤6ms Response</span>
+          </div>
+        </div>
+
+        <!-- Dual OS -->
+        <div class="f-card reveal d3">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M9 9h6v6H9z"/>
+            </svg>
+          </div>
+          <h3>Dual OS Architecture</h3>
+          <p>Switch seamlessly between Android 14 and Windows via OPS Intel i7 — the right OS for every workflow, without rebooting.</p>
+          <div class="f-tags">
+            <span class="f-tag">Android 14</span>
+            <span class="f-tag">Intel i7 OPS</span>
+            <span class="f-tag">8GB + 512GB SSD</span>
+          </div>
+        </div>
+
+        <!-- AI Audio -->
+        <div class="f-card reveal d4">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+            </svg>
+          </div>
+          <h3>360° AI Audio</h3>
+          <p>An 8-array beamforming microphone captures every voice with omnidirectional precision — ideal for hybrid meetings and open training rooms.</p>
+          <div class="f-tags">
+            <span class="f-tag">8-Array Mic</span>
+            <span class="f-tag">360° Pickup</span>
+            <span class="f-tag">Noise Reduction</span>
+          </div>
+        </div>
+
+        <!-- Wireless Casting -->
+        <div class="f-card reveal d5">
+          <div class="f-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"/>
+              <circle cx="12" cy="20" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>4K Wireless Casting</h3>
+          <p>Bi-directional 4K casting and Quad View let multiple participants share content simultaneously — zero cables required.</p>
+          <div class="f-tags">
+            <span class="f-tag">4K Cast</span>
+            <span class="f-tag">Bi-directional</span>
+            <span class="f-tag">Quad View</span>
+          </div>
+        </div>
+
+        <!-- Camera — wide card -->
+        <div class="f-card wide reveal d6">
+          <div class="f-card-split">
+            <div class="f-card-col">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M23 7l-7 5 7 5V7z"/>
+                  <rect x="1" y="5" width="15" height="14" rx="2"/>
+                </svg>
+              </div>
+              <div class="f-stat">48MP</div>
+              <div class="f-stat-label">Front Camera (Optional)</div>
+              <h3>Professional Video Quality</h3>
+              <p>Capture every participant with studio-grade clarity — your video calls look as sharp as in-person meetings.</p>
+            </div>
+            <div class="f-card-col">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
+                </svg>
+              </div>
+              <div class="f-stat">Quad</div>
+              <div class="f-stat-label">Screen Split View</div>
+              <h3>Multi-source Collaboration</h3>
+              <p>Display up to four content sources side by side — perfect for hybrid sessions, data comparison, or whiteboarding.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SMART ACCESSORIES -->
+    <section class="accessories-section">
+
+      <div class="section-header reveal d1">
+        <h2>Smart Accessories</h2>
+        <p>Enhance your AVION experience with purpose-built accessories.</p>
+      </div>
+
+      <div class="acc-grid">
+
+        <div class="acc-card reveal d2">
+          <div class="acc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3>Smart Pen</h3>
+          <p>Dual-color pen with flip-and-write technology for seamless annotation.</p>
+          <ul>
+            <li>Dual-color support</li>
+            <li>Flip-and-write function</li>
+            <li>Ergonomic design</li>
+            <li>Pressure sensitivity</li>
+          </ul>
+        </div>
+
+        <div class="acc-card reveal d3">
+          <div class="acc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4M17 8l-5 5-5-5"/>
+            </svg>
+          </div>
+          <h3>Casting Dongle</h3>
+          <p>Wireless casting dongle via USB / Type-C for instant screen sharing.</p>
+          <ul>
+            <li>4K wireless casting</li>
+            <li>USB and Type-C options</li>
+            <li>Plug-and-play</li>
+            <li>Multi-device support</li>
+          </ul>
+        </div>
+
+        <div class="acc-card reveal d4">
+          <div class="acc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8"/>
+            </svg>
+          </div>
+          <h3>Omni Mic Series</h3>
+          <p>360° omnidirectional microphone for clear audio pickup in any setting.</p>
+          <ul>
+            <li>8-array beamforming</li>
+            <li>360° coverage</li>
+            <li>Noise cancellation</li>
+            <li>Echo reduction</li>
+          </ul>
+        </div>
+
+        <div class="acc-card reveal d5">
+          <div class="acc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3>Mobile Stands</h3>
+          <p>Professional mobile stands for office and classroom environments.</p>
+          <ul>
+            <li>Height adjustable</li>
+            <li>Stable base with wheels</li>
+            <li>Easy mobility</li>
+            <li>Cable management</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner reveal d1">
+      <div class="cta-inner">
+        <h2>Ready to Experience the AX Series?</h2>
+        <p>Talk to our team and find the right size and configuration for your space.</p>
+        <div class="cta-btns">
+          <a href="https://api.whatsapp.com/send/?phone=6281563905555&text=Halo,+saya+mau+bertanya+tentang+AVION+Display!"
+             target="_blank"
+             class="primary-btn">Konsultasi Sekarang</a>
+
+          <a href="https://www.tokopedia.com/central-audio-visual/etalase/interactive-display"
+             target="_blank"
+             class="secondary-btn tokped">
+            <img src="assets/image/tokopedia-icon.png" class="btn-icon">
+            Order via Tokopedia
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 AVION Display</p>
+  </footer>
+
+  <script>
+    // Size chip toggle
+    document.querySelectorAll('.size-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.size-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
       });
+    });
 
-      // Scroll reveal
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.style.animationPlayState = "running";
-              observer.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.12 },
-      );
-
-      document.querySelectorAll(".reveal").forEach((el) => {
-        el.style.animationPlayState = "paused";
-        observer.observe(el);
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.animationPlayState = 'running';
+          observer.unobserve(e.target);
+        }
       });
-    </script>
-  </body>
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navDrawer  = document.getElementById("navDrawer");
+
+    hamburger.addEventListener("click", () => {
+      const isOpen = navDrawer.classList.toggle("open");
+      hamburger.classList.toggle("open", isOpen);
+      navDrawer.style.display = isOpen ? "flex" : "none";
+      document.body.style.overflow = isOpen ? "hidden" : "";
+    });
+
+    navDrawer.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navDrawer.classList.remove("open");
+        hamburger.classList.remove("open");
+        navDrawer.style.display = "none";
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+
+</body>
 </html>
