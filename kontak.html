@@ -276,46 +276,9 @@
     <p>© 2026 AVION Display</p>
   </footer>
 
-  <!-- ALL SCRIPTS IN ONE BLOCK -->
+  <script src="js/main.js"></script>
+
   <script>
-
-    // ── SCROLL REVEAL ──
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('revealed');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-
-    // ── NAVBAR SCROLL ──
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    // ── HAMBURGER MENU ──
-    const hamburger = document.getElementById('hamburger');
-    const navDrawer  = document.getElementById('navDrawer');
-
-    hamburger.addEventListener('click', () => {
-      const isOpen = navDrawer.classList.toggle('open');
-      hamburger.classList.toggle('open', isOpen);
-      navDrawer.style.display = isOpen ? 'flex' : 'none';
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-
-    navDrawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navDrawer.classList.remove('open');
-        hamburger.classList.remove('open');
-        navDrawer.style.display = 'none';
-        document.body.style.overflow = '';
-      });
-    });
-
     // ── FORM SUBMIT ──
     const form      = document.getElementById('kontakForm');
     const success   = document.getElementById('formSuccess');

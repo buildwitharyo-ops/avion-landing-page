@@ -492,6 +492,8 @@
     <p>© 2026 AVION Display</p>
   </footer>
 
+  <script src="js/main.js"></script>
+
   <script>
     // Size chip toggle
     document.querySelectorAll('.size-chip').forEach(chip => {
@@ -501,41 +503,19 @@
       });
     });
 
-    // Scroll reveal
-    const observer = new IntersectionObserver(entries => {
+    // Scroll reveal (animation-based, separate from .scroll-reveal)
+    const revealAnim = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.style.animationPlayState = 'running';
-          observer.unobserve(e.target);
+          revealAnim.unobserve(e.target);
         }
       });
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.reveal').forEach(el => {
       el.style.animationPlayState = 'paused';
-      observer.observe(el);
-    });
-  </script>
-
-
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navDrawer  = document.getElementById("navDrawer");
-
-    hamburger.addEventListener("click", () => {
-      const isOpen = navDrawer.classList.toggle("open");
-      hamburger.classList.toggle("open", isOpen);
-      navDrawer.style.display = isOpen ? "flex" : "none";
-      document.body.style.overflow = isOpen ? "hidden" : "";
-    });
-
-    navDrawer.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navDrawer.classList.remove("open");
-        hamburger.classList.remove("open");
-        navDrawer.style.display = "none";
-        document.body.style.overflow = "";
-      });
+      revealAnim.observe(el);
     });
   </script>
 

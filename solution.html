@@ -797,24 +797,9 @@
     <p>© 2026 AVION Display</p>
   </footer>
 
+  <script src="js/main.js"></script>
+
   <script>
-    // SCROLL REVEAL
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('revealed');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-
-    // NAVBAR SCROLL
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
     // SIDE NAV ACTIVE DOT
     const sections = document.querySelectorAll('.sol-section');
     const dots = document.querySelectorAll('.side-dot');
@@ -829,28 +814,6 @@
       });
     }, { threshold: 0.4 });
     sections.forEach(s => dotObserver.observe(s));
-  </script>
-
-
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navDrawer  = document.getElementById("navDrawer");
-
-    hamburger.addEventListener("click", () => {
-      const isOpen = navDrawer.classList.toggle("open");
-      hamburger.classList.toggle("open", isOpen);
-      navDrawer.style.display = isOpen ? "flex" : "none";
-      document.body.style.overflow = isOpen ? "hidden" : "";
-    });
-
-    navDrawer.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navDrawer.classList.remove("open");
-        hamburger.classList.remove("open");
-        navDrawer.style.display = "none";
-        document.body.style.overflow = "";
-      });
-    });
   </script>
 
 </body>
